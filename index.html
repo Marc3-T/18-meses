@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>❤️ 17 Meses Juntos ❤️</title>
+    <title>❤️ 18 Meses Juntos ❤️</title>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <style>
         * {
@@ -227,7 +227,7 @@
             font-size: 1.2rem;
         }
 
-        /* Modal para foto ampliada */
+        
         .modal {
             display: none;
             position: fixed;
@@ -292,7 +292,7 @@
             font-size: 1.3rem;
         }
 
-        /* Animaciones */
+        
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -376,15 +376,15 @@
         <div id="welcome-screen" class="screen active">
             <div class="heart">💖</div>
             <h1>Hoy cumplimos</h1>
-            <div class="counter">❤️ 17 MESES ❤️</div>
-            <p>Mi reina hermosa</p>
+            <div class="counter">❤️ 18 MESES ❤️</div>
+            <p>Amor de mi vida</p>
             <button onclick="showMemories()">Entrar</button>
         </div>
 
         
         <div id="memories-screen" class="screen">
             <div class="back-button" onclick="showWelcome()">← Volver</div>
-            <h2>❤️ Nuestros 17 Meses ❤️</h2>
+            <h2>❤️ Nuestros 18 Meses ❤️</h2>
             
             <div class="memory-card">
                 <div class="memory-date">Mes 1</div>
@@ -467,10 +467,15 @@
             </div>
 
             <div class="memory-card current">
-                <div class="memory-date">Hoy - 17 Meses</div>
+                <div class="memory-date">17 Meses</div>
                 <div class="memory-text">Hoy cumplimos 17 meses juntos mi amor, es increíble todo lo que hemos vivido hasta ahora, no te imaginas la felicidad y la tranquilidad que me da tenerte en mi vida, eres demasiado importante para mí, eres la mujer de mi vida, que me motiva a levantarme cada día con ganas de ser mejor, de esforzarme más y de darte siempre lo mejor  y siempre dar lo mejor de mí, a tu lado todo se siente más claro, más bonito, me gusta pensar en todo lo que hemos logrado juntos y en todas las metas que ya hemos ido cumpliendo, porque eso me confirma que vamos por el camino correcto, y sé que lo que viene será aún mejor, porque mientras estemos juntos, nada se siente imposible, gracias por todo lo que haces por mí, por apoyarme, por estar ahí para mí, por confiar en nosotros, de verdad te valoro muchísimo y te agradezco de corazón por ser la mujer increíble que eres, te amo mucho amor de mi vida ❤️ También te hice un juego mi amor, es de un corazon que tiene que esquivar los obstáculos, tienes que darle a la pantalla para que salte mi amor, espero que te guste <button class="link-button" onclick="window.location.href='https://marc3-t.github.io/juego-17m/'">Abrir</button></div>
             </div>
-            <!-- Galería de fotos -->
+
+            <div class="memory-card current">
+                <div class="memory-date">Hoy - 18 Meses</div>
+                <div class="memory-text">❤️</div>
+            </div>
+            <-- Fotos -->
             <div class="photo-gallery">
                 <h3 class="gallery-title">❤️ Nosotros ❤️</h3>
                 <div class="photos-grid">
@@ -705,12 +710,12 @@
             </div>
         </div>
 
-        <!-- Mensaje especial -->
+        
         <div class="floating-message">
             Te amo ❤️
         </div>
 
-        <!-- Modal para fotos ampliadas -->
+        
         <div id="photoModal" class="modal">
             <div class="modal-content">
                 <button class="close-modal" onclick="closeModal()">×</button>
@@ -731,13 +736,13 @@
             document.getElementById('welcome-screen').classList.add('active');
         }
 
-        // Funcionalidad del modal para fotos
+        
         function openModal(photoId) {
             const modal = document.getElementById('photoModal');
             const modalImage = document.getElementById('modalImage');
             const modalCaption = document.getElementById('modalCaption');
             
-            // Obtener la fuente de la imagen clickeada
+            
             const clickedPhoto = document.querySelector(`[onclick="openModal('${photoId}')"] img`);
             modalImage.src = clickedPhoto.src;
             modalImage.alt = clickedPhoto.alt;
@@ -751,21 +756,21 @@
             modal.classList.remove('active');
         }
 
-        // Cerrar modal al hacer clic fuera de la imagen
+        
         document.getElementById('photoModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeModal();
             }
         });
 
-        // Cerrar modal con tecla ESC
+        
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeModal();
             }
         });
 
-        // Efectos adicionales para hacerlo más especial
+        
         document.addEventListener('DOMContentLoaded', function() {
             // Agregar confeti al hacer clic
             document.body.addEventListener('click', function(e) {
@@ -796,7 +801,7 @@
             }
         }
 
-        // Agregar estilo para el confeti
+        
         const style = document.createElement('style');
         style.textContent = `
             @keyframes confettiFall {
